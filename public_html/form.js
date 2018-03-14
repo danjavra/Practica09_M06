@@ -23,7 +23,7 @@ break;
  function visualizar(){
       var that = this;
      clearTimeout(int)
-     int = setTimeout(function(){text1.value = that.value},500)
+     int = setTimeout(function(){texto.value = that.value; console.log(that.value)},500)
      ;}
  
  text1.addEventListener("keyup",visualizar);
@@ -32,3 +32,29 @@ break;
  text4.addEventListener("keyup",visualizar);
 
 
+// window.addEventListener("load",inicio,false);
+// function inicio(){
+//      var inputNombre = document.forms["altaUsuario"]["inputNombre"];
+// 
+//      inputNombre.addEventListener("Keyup",validaNombre,false);
+// }
+// 
+//
+// function validaNombre(){
+//   var nombre = document.forms["altaUsuario"]["inputNombre"]; nombre = input
+//   // /^[A-z]{3,15}$/
+//   var RegExPattern = /^[A-z]{3,15}$/;
+//   
+//   if (inputNombre.value.match(RegExPattern)) { // comprovamos el matching con match
+//   inputNombre.style.border="1px solid green";
+//   var document.forms["altaUsuario"]["textarea"].innerHTML="El nom es correcte";
+//   inputNombre.nextElementSibling.innerHTML="OK";
+//   
+//   }else{
+//   inputNombre.style.border="1px solid red";
+//   var document.forms["altaUsuario"]["textarea"].innerHTML="El nom es incorrecte";
+//   inputNombre.nextElementSibling.innerHTML="ERROR ha de tenir entre 3 i 15 lletres";
+//   }
+//   console.log(nombre);
+//
+//    }
